@@ -1,6 +1,6 @@
 import os
 import cv2
-import mmcv
+#import mmcv
 import time
 import argparse
 import pickle
@@ -43,7 +43,9 @@ ckpts = [
 ]
 
 data_dict = {
-    'casia1':('test_datas/CASIA1/imgs/', 'test_datas/CASIA1/masks/', '.png'),
+#    'casia1':('test_datas/CASIA1/imgs/', 'test_datas/CASIA1/masks/', '.png'),
+#    'casia1':('test_datas/CASIA1/imgs/', 'test_datas/CASIA1/masks/', '_gt.png'),
+    'tmpdavid':('/media/nfsdavid/manipana/ImageForgeriesOSN_Dataset/tmp/', '/media/nfsdavid/manipana/ImageForgeriesOSN_Dataset/tmp_GT/', '_gt.png'),
 }
 f = open('casia1_infer.txt','a+')
 if not (args.out is None):
